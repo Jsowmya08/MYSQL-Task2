@@ -1,4 +1,5 @@
 create database elevatelabs;
+Use elevatelabs;
 -- creating a table of e_commerce
 CREATE TABLE customers (
   customer_id INT AUTO_INCREMENT PRIMARY KEY,
@@ -13,13 +14,13 @@ CREATE TABLE customers (
   INSERT INTO customers VALUES ('3', 'vihan' , 'viahan.b@gmail.com' , '23764276921', 'Bangalore');
   INSERT INTO customers VALUES ('4', 'vidhvan' , 'vidhvan@gmail.com' , '83466429847', 'Bangalore');
   
-Select * from elevatelabs.customers;
+Select * from customers;
 -- updating the data in the customers table
 update customers set Email='vidhvan.b@gmail.com' where customer_id=4;
 update customers set Phone= 9998887771 where customer_id=3;
 
 -- deleting the data from the customers table
 delete from customers where customer_id=1;
-Select * from elevatelabs.customers;
+Select * from customers;
 
   
